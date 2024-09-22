@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.9.13 on darwin)" generated="2024-09-22T18:11:43.151713" rpa="false" schemaversion="5">
+<suite id="s1" name="RegisterTestcases" source="/Users/Admin/Downloads/updated_registration_test_case/tests/RegisterTestcases.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-09-22T18:11:43.605772" level="INFO">Opening browser 'chrome' to base url 'https://app.futureskill.co/register'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-22T18:11:43.605229" elapsed="6.739100"/>
+</kw>
+<test id="s1-t1" name="Register a New User" line="10">
+<kw name="Fill Registration Form" owner="RegistrationPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='firstName']</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-22T18:11:50.351489" elapsed="0.200660"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-22T18:11:50.552968" level="INFO">Typing text 'Thanachok' into text field 'xpath=//input[@name='firstName']'.</msg>
+<arg>xpath=//input[@name='firstName']</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-22T18:11:50.552508" elapsed="0.443076"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='lastName']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-22T18:11:50.995934" elapsed="0.032828"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-22T18:11:51.029756" level="INFO">Typing text 'Suwan' into text field 'xpath=//input[@name='lastName']'.</msg>
+<arg>xpath=//input[@name='lastName']</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-22T18:11:51.029196" elapsed="0.772971"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='email']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-22T18:11:51.802492" elapsed="0.290004"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-22T18:11:52.095462" level="INFO">Typing text 'thanachok.s@kkumail.com' into text field 'xpath=//input[@name='email']'.</msg>
+<arg>xpath=//input[@name='email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-22T18:11:52.093078" elapsed="0.463979"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='phoneNumber']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-22T18:11:52.557483" elapsed="0.026027"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-22T18:11:52.584274" level="INFO">Typing text '0648916182' into text field 'xpath=//input[@name='phoneNumber']'.</msg>
+<arg>xpath=//input[@name='phoneNumber']</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-22T18:11:52.583823" elapsed="0.201887"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='newPassword']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-22T18:11:52.786098" elapsed="0.031051"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-22T18:11:52.823087" level="INFO">Typing text 'ta012517WA' into text field 'xpath=//input[@name='newPassword']'.</msg>
+<arg>xpath=//input[@name='newPassword']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-22T18:11:52.821741" elapsed="0.160580"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='confirmPassword']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-22T18:11:52.982657" elapsed="0.024461"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-22T18:11:53.007858" level="INFO">Typing text 'ta012517WA' into text field 'xpath=//input[@name='confirmPassword']'.</msg>
+<arg>xpath=//input[@name='confirmPassword']</arg>
+<arg>${confirmPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-22T18:11:53.007434" elapsed="0.150253"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='consent']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-22T18:11:53.158031" elapsed="0.027828"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-22T18:11:53.186523" level="INFO">Clicking element 'xpath=//input[@name='consent']'.</msg>
+<arg>xpath=//input[@name='consent']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-22T18:11:53.186178" elapsed="0.088343"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'สมัครสมาชิก')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-22T18:11:53.274882" elapsed="0.024852"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-22T18:11:53.300588" level="INFO">Clicking button 'xpath=//button[contains(text(), 'สมัครสมาชิก')]'.</msg>
+<arg>xpath=//button[contains(text(), 'สมัครสมาชิก')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-22T18:11:53.300053" elapsed="0.185755"/>
+</kw>
+<arg>${firstName}</arg>
+<arg>${lastName}</arg>
+<arg>${registration_email}</arg>
+<arg>${registration_password}</arg>
+<arg>${registration_password}</arg>
+<arg>${registration_phone}</arg>
+<doc>Fill out the registration form with first name, last name, email, password, confirm password, and phone number</doc>
+<status status="PASS" start="2024-09-22T18:11:50.349818" elapsed="3.136356"/>
+</kw>
+<kw name="Verify OTP Page and Enter Code" owner="RegistrationPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='otpCode']</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-22T18:11:53.487579" elapsed="2.264125"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-22T18:11:55.752535" level="INFO">Typing text '123456' into text field 'xpath=//input[@name='otpCode']'.</msg>
+<arg>xpath=//input[@name='otpCode']</arg>
+<arg>${otpCode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-22T18:11:55.752047" elapsed="0.116879"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'ยืนยัน')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-22T18:11:55.869330" elapsed="0.026937"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-22T18:11:55.896935" level="INFO">Clicking button 'xpath=//button[contains(text(), 'ยืนยัน')]'.</msg>
+<arg>xpath=//button[contains(text(), 'ยืนยัน')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-22T18:11:55.896594" elapsed="0.133564"/>
+</kw>
+<arg>123456</arg>
+<doc>Verify that the OTP page is displayed and enter the OTP code</doc>
+<status status="PASS" start="2024-09-22T18:11:53.486749" elapsed="2.543681"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-22T18:11:56.030938" elapsed="0.068315"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[contains(text(),'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์')]</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-22T18:11:56.099778" elapsed="0.073924"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-22T18:11:56.737326" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-22T18:11:56.737680" level="FAIL">Element 'xpath=//*[contains(text(),'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์')]' should have contained text '"ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์"' but its text was 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์XX-XXXX-6182'.</msg>
+<arg>xpath=//*[contains(text(),'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์')]</arg>
+<arg>"ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์"</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2024-09-22T18:11:56.174525" elapsed="0.570533">Element 'xpath=//*[contains(text(),'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์')]' should have contained text '"ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์"' but its text was 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์XX-XXXX-6182'.</status>
+</kw>
+<doc>Register a new user on Future Skill using email thanachok.suwan@gmail.com</doc>
+<status status="FAIL" start="2024-09-22T18:11:50.346766" elapsed="6.398857">Element 'xpath=//*[contains(text(),'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์')]' should have contained text '"ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์"' but its text was 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์XX-XXXX-6182'.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-22T18:11:56.747098" elapsed="0.467867"/>
+</kw>
+<status status="FAIL" start="2024-09-22T18:11:43.154610" elapsed="14.060517"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RegisterTestcases">RegisterTestcases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
