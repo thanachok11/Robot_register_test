@@ -49,7 +49,7 @@ Verify OTP Page and Enter Code
     # Wait until the OTP input field is visible
     Wait Until Element Is Visible    xpath=//input[@name='otpCode']    20s
     Input Text    xpath=//input[@name='otpCode']    ${otpCode}
-
+    sleep     2s
     # Optionally click the confirm or submit button after entering the OTP
     Wait Until Element Is Visible    xpath=//button[contains(text(), 'ยืนยัน')]    10s
     Click Button    xpath=//button[contains(text(), 'ยืนยัน')]
